@@ -9,12 +9,23 @@ public class Reversing {
         }
    }
 
+     public static int reverseNum(int num){
+         int reversed = 0;
+         while (num != 0) {
+            int remiander = num % 10;
+            reversed = reversed * 10 + remiander;
+            num = num / 10;
+         }
+         return reversed;
+   }
    
     public static void main(String[] args) {
         int[] arr = { 1, 32, 28, 9, 12, 18, 5 };
-        reverse(arr);
-        for(int nums : arr){
-            System.out.println(nums);
-        }
+        int num = -321;
+        System.out.println(reverseNum(num));
+        // reverse(arr);
+        // for(int nums : arr){
+        //     System.out.println(nums);
+        // }
     }    
 }
