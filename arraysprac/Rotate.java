@@ -1,3 +1,4 @@
+package arraysprac;
 public class Rotate {
    
     public static void rotateN(int[] arr, int k) {

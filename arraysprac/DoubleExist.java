@@ -1,3 +1,4 @@
+package arraysprac;
 
 public class DoubleExist {
 public static void main(String[] args) {

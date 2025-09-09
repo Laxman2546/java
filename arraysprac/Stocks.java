@@ -1,3 +1,4 @@
+package arraysprac;
 class Stocks {
     int stockBuySell(int arr[]) {
         // code here

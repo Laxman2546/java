@@ -1,3 +1,4 @@
+package arraysprac;
 import java.util.*;
 
 public class Input {

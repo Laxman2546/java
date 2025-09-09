@@ -1,3 +1,4 @@
+package arraysprac;
 class Solution {
     public int peakElement(int[] arr) {
         int start = 1;

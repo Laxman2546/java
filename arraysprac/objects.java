@@ -1,3 +1,4 @@
+package arraysprac;
 
 import static com.lakshman.Greet.greeting;
 

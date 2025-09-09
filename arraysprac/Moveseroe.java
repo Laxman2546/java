@@ -1,3 +1,4 @@
+package arraysprac;
 public class Moveseroe {
     public static void main(String[] args) {
         

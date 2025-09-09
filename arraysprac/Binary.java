@@ -1,3 +1,4 @@
+package arraysprac;
 public class Binary{
 
     public static int BinarySearch(int[] arr,int target){

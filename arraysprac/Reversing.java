@@ -1,3 +1,4 @@
+package arraysprac;
 
 public class Reversing {
     public static void reverse(int[] array) {

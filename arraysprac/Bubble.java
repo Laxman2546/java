@@ -1,3 +1,4 @@
+package arraysprac;
 public class Bubble {
     public static void main(String[] args) {
         int[] arr = { 7, 1 , 5, 8, 3, 9, 6 };

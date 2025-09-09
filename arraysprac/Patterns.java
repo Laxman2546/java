@@ -1,3 +1,4 @@
+package arraysprac;
 public class Patterns {
     public static void butterFly() {
         int n = 8;

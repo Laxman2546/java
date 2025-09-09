@@ -1,3 +1,4 @@
+package arraysprac;
 public class Adding{
 public static void sumDigits(int num){
     System.out.println(num);
