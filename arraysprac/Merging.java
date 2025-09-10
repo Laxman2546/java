@@ -1,5 +1,5 @@
 package arraysprac;
-import java.util.Arrays;
+
 
 public class Merging {
         public static int[] mergedArr(int[] arr1, int[] arr2) {

@@ -1,21 +1,29 @@
 package arraysprac;
-class Solution {
-    public int peakElement(int[] arr) {
-        int start = 1;
-        int end = arr.length - 2;
 
+class Solution {
+    
+    public int findPeakElement(int[] arr) {
+        int n = arr.length;
+        if (n == 1) {
+            return 0;
+        }
+        
+        int start = 0;
+        int end = n - 1;
+        
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            if (arr[mid - 1] <= arr[mid] && arr[mid] >= arr[mid + 1]) {
-                return 1; // found a peak
-            } else if (arr[mid] < arr[mid - 1]) {
-                end = mid - 1; // move left
+            int left = (mid == 0) ? Integer.MIN_VALUE : arr[mid - 1];
+            int right = (mid == n - 1) ? Integer.MIN_VALUE : arr[mid + 1];
+            
+            if (arr[mid] >= left && arr[mid] >= right) {
+                return mid;
+            } else if (arr[mid] < right) {
+                start = mid + 1;
             } else {
-                start = mid + 1; // move right
+                end = mid - 1;
             }
         }
-        return 0; // no peak found in the middle range
-    }
 }
 public class Peakindex{
 
@@ -24,7 +32,7 @@ public class Peakindex{
         int minNumber = Math.max(120,15);
         System.out.println(minNumber + "this is min");
         Solution sol = new Solution();
-        System.out.println(sol.peakElement(arr));
+        System.out.println(sol.findPeakElement(arr));
         
     }
 }
