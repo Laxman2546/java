@@ -1,22 +1,28 @@
 
+import java.util.HashSet;
+
 public class Duplicates {
     
-     public static int removeDuplicates(int[] arr) {
+    public static int removeDuplicate(int[] arr){
+        HashSet<Integer> hm = new HashSet<>();
         int count = 0;
-        for(int i=0;i <arr.length;i++){
-            for(int j=i+1; j<arr.length;j++){
-                if(arr[j] == arr[i]){
-                    count++;
-                }
+        for (int i = 0; i < arr.length; i++) {
+
+            if(!hm.contains(arr[i])) {
+                hm.add(arr[i]);
+                arr[count++] = arr[i];
             }
         }
         return count;
-    }
-    public static void main(String[] args) {
-        int[] arr = { 12,5,8,9,5,6,8,5,8,5};
-        int count = removeDuplicates(arr);
-        
-        System.out.print(count);
+
     }
     
+    public static void main(String[] args) {
+        int arr[] = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+        System.out.println( removeDuplicate(arr));
+        for (int nums : arr) {
+            System.out.println(nums);
+        }
+
+    }
 }
