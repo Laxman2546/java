@@ -1,8 +1,7 @@
 package stacks;
-import java.util.*;
 public class Index {
   
-      public int strStr(String haystack, String needle) {
+      public static  int strStr(String haystack, String needle) {
         int n = haystack.length();
         int m = needle.length();
 
