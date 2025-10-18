@@ -17,3 +17,6 @@ class WordCount {
         System.out.println(noWords);
     }
 }
+
+//compile command: javac WordCount.java
+//run command: java WordCount
