@@ -20,7 +20,7 @@ class WordCount {
         System.out.print("Enter Your word:");
         String word = scanner.nextLine();
         int noCharcters = counter(word);
-        int noWords = noofWords(word);
+        int noWords = noofWords(word);// if words dont need remove this line
         System.out.println("Character Count:"+ noCharcters);
         System.out.println("Words Count:"+ noWords);
     }
