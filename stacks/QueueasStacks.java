@@ -1,18 +1,22 @@
 package stacks;
 
+import java.util.HashSet;
 import java.util.Stack;
 
 class MyQueue {
     private Stack<Integer> firstStack;
     private Stack<Integer> secondStack;
-    
+    private HashSet<Integer> hs;
     public MyQueue() {
         firstStack = new Stack<>();
         secondStack = new Stack<>();
+        hs = new HashSet<>();
+
     }
 
     public void push(int x) {
         firstStack.push(x);
+
     }
 
     public int pop() {
@@ -35,6 +39,6 @@ class MyQueue {
 
 public class QueueasStacks {
     public static void main(String[] args) {
-        
+       MyQueue qu = new MyQueue();
     }
 }
